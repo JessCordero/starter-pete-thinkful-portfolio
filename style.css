@@ -19,6 +19,35 @@ h3 {
 /* Header */
 header {
   text-align: center;
+.header-container {
+  display: flex; /* Use flexbox to create a row layout */
+  align-items: center; /* Vertically center items */
+  justify-content: space-between; /* Distribute space between items */
+  background-color: #eae2b7; /* Add a background color for illustration */
+  padding: 20px;
+}
+
+.logo {
+  display: flex; /* I added this */
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  margin: 10px; /* Reset default margin for h1 element */
+  color: #080807; /* Set color for the logo text */
+}
+.navigation {
+  display: flex; /* Use flexbox for the navigation items */
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #d62828; /* Set color for navigation links */
+  margin-right: 15px; /* Add some spacing between navigation links */
+}
+
 }
 
 /* Containers */
@@ -65,6 +94,55 @@ img {
 .image-circle {
   border: 2px solid #003049;
   border-radius: 50%;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.image-container {
+  flex: 1; /* Let the image container take up available space */
+  margin-right: 20px; /* Add spacing between the image and text */
+}
+
+.text-container {
+  flex: 1; /* Let the text container take up available space */
+  
+}
+
+.paragraph-container {
+  text-align: left;
+}
+
+/* Portfolio section styles */
+#portfolio {
+  text-align: center;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: space-between; /* Distribute space evenly between projects */
+  margin-top: 20px; /* Add spacing between the projects (adjust as needed) */
+}
+
+.project {
+  flex-basis: calc(33.33% - 20px); /* Calculate width for each project with spacing */
+  text-align: left; /* Reset text alignment to left for project details */
+}
+
+.project img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+.project h3 {
+  margin: 10px 0;
+}
+
+.project-description {
+  font-size: 14px; /* Set font size for project descriptions */
 }
 
 /* Footer */
